@@ -1,4 +1,3 @@
-import pytest
 from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -6,9 +5,6 @@ from app.models.post import Post
 
 
 async def test_fetch_and_store_items(client: AsyncClient, mocker):
-    """
-    Tests the POST /fetch endpoint by mocking the service functions.
-    """
     mocker.patch(
         "app.services.post_service.fetch_posts_from_api",
         return_value=[{"id": 1, "title": "API Test", "body": "API Body"}],

@@ -1,10 +1,8 @@
 from __future__ import annotations
 from logging.config import fileConfig
 from sqlalchemy import pool
-from sqlalchemy.engine import Connection
 from alembic import context
 
-import os
 from app.db import Base
 from app import models  # noqa: F401
 from app.config import settings
