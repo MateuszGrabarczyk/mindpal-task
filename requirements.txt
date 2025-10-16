@@ -1,0 +1,11 @@
+fastapi
+pytest
+pytest-asyncio
+aiosqlite
+httpx
+uvicorn[standard]
+sqlalchemy[asyncio]
+alembic
+pydantic-settings
+asyncpg
+psycopg[binary]
